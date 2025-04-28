@@ -1,33 +1,44 @@
-# Linear Regression Models
+# Regression Analysis Projects
 
-This repository contains two Jupyter Notebooks demonstrating the implementation of **Simple Linear Regression** and **Multiple Linear Regression** using Python, applied on synthetic and real-world datasets.
+This repository contains several Jupyter Notebooks demonstrating different types of regression analysis using Python.
 
-## Project Structure
+## Notebooks
 
-```
-linear-regression-models/
-│
-├── Dataset_Used/
-│   ├── modified_synthetic_economic_data.csv
-│   └── weight-height.csv
-│
-├── simple_linear_regression.ipynb
-├── multiple_linear_regression.ipynb
-└── README.md
-```
+1.  **[simple_linear_regression.ipynb](simple_linear_regression.ipynb)**
 
-## Files
+    * Implements simple linear regression to analyze the relationship between height and weight.
+    * Uses the `weight-height.csv` dataset.
+    * Key libraries: `pandas`, `matplotlib`, `numpy`, `sklearn`.
+    * Explores data visualization, model training, and prediction.
 
-- 📄 `simple_linear_regression.ipynb`
-  - Trains a **Simple Linear Regression** model on the `weight-height.csv` dataset.
-  - Visualizes the relationship between features.
-  - Calculates performance metrics like Mean Squared Error (MSE) and R² Score.
+2.  **[mulltiple_linear_regression.ipynb](mulltiple_linear_regression.ipynb)**
 
-- 📄 `multiple_linear_regression.ipynb`
-  - Builds a **Multiple Linear Regression** model using the `modified_synthetic_economic_data.csv` dataset.
-  - Demonstrates model training, prediction, and evaluation.
-  - Involves feature engineering and analysis.
+    * Performs multiple linear regression to predict economic index prices based on interest and unemployment rates.
+    * Uses `modified_synthetic_economic_data.csv`.
+    * Key libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `sklearn`, `statsmodels`.
+    * Includes data preprocessing, model fitting, and evaluation using statistical metrics.
 
-- 📁 `Dataset_Used/`
-  - `modified_synthetic_economic_data.csv`: Synthetic dataset representing economic indicators.
-  - `weight-height.csv`: Dataset containing weight and height data for individuals.
+3.  **[house_regression.ipynb](house_regression.ipynb)**
+
+    * Conducts regression analysis on housing data to predict house prices.
+    * Uses the `Housing.csv` dataset.
+    * Key libraries: `pandas`, `numpy`, `seaborn`, `matplotlib`, `sklearn`.
+    * Covers data loading, exploration, preprocessing (including categorical variable handling), model training, and evaluation.
+
+## Datasets
+
+The following datasets are used in the notebooks:
+
+* `weight-height.csv`:  Dataset for simple linear regression, relating to height and weight.
+* `modified_synthetic_economic_data.csv`:  Dataset for multiple linear regression, containing economic indicators.
+* `Housing.csv`:  Dataset for house price prediction.
+
+## Libraries Used
+
+* **pandas**:  For data manipulation and analysis.
+* **numpy**:  For numerical computations.
+* **matplotlib**:  For creating visualizations.
+* **seaborn**:  For enhanced data visualization.
+* **scikit-learn (sklearn)**:  For machine learning algorithms (linear regression), data splitting, and preprocessing.
+* **statsmodels**:  For statistical modeling and analysis (multiple linear regression).
+
